@@ -10,7 +10,13 @@
         width: 24px;
         height: 24px;
         background-image: url("../img/Menu.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        display:inline-block;
+    }
 
+    .container-imagem{
+        padding: 1em;
     }
 
     .container {
@@ -26,12 +32,28 @@
         display: none;
         position: absolute;
         top: 100%;
+        width: 60vw;
     }
 
-        .container-botao:checked~.container-menu{
+    .container-botao:checked~.container-menu{
             display: block;
         }
-    
+
+    .menu-item, .menu-item-titulo{
+        padding: lem;
+        background-color: var(--branco);
+    }
+
+    .menu-link{
+        text-transform: uppercase;
+        text-decoration: none;
+        color: var(--azul-degrade);
+    }
+
+    .menu-item-titulo{
+        color: var(--laranja);
+    }
+   
     @media screen and (min-width: 1024px) {
     .cabecalho-titulo {
     display: flex;
